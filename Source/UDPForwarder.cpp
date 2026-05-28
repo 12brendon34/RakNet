@@ -12,7 +12,9 @@
 
 #if _RAKNET_SUPPORT_UDPForwarder==1
 
+#ifndef _WIN32
 #include <netdb.h>
+#endif
 
 #include "DS_OrderedList.h"
 #include "GetTime.h"

@@ -8,7 +8,10 @@
  *
  */
 
+#ifndef _WIN32
 #include <netdb.h>
+#endif
+
 #include "EmptyHeader.h"
 
 #ifdef RAKNET_SOCKET_2_INLINE_FUNCTIONS

@@ -14,7 +14,9 @@
 
 #include "RakNetTypes.h"
 
+#ifndef _WIN32
 #include <netdb.h>
+#endif
 
 #include <stdio.h>
 #include <string.h>
