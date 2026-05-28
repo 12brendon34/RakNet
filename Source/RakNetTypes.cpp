@@ -13,14 +13,16 @@
 
 
 #include "RakNetTypes.h"
-#include "RakAssert.h"
-#include <string.h>
-#include <stdio.h>
-#include "WindowsIncludes.h"
-#include "WSAStartupSingleton.h"
-#include "SocketDefines.h"
-#include "RakNetSocket2.h"
 
+#include <netdb.h>
+
+#include <stdio.h>
+#include <string.h>
+#include "RakAssert.h"
+#include "RakNetSocket2.h"
+#include "SocketDefines.h"
+#include "WSAStartupSingleton.h"
+#include "WindowsIncludes.h"
 
 #if   defined(_WIN32)
 // extern __int64 _strtoui64(const char*, char**, int); // needed for Code::Blocks. Does not compile on Visual Studio 2010

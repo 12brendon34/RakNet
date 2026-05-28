@@ -12,15 +12,17 @@
 
 #if _RAKNET_SUPPORT_UDPForwarder==1
 
-#include "GetTime.h"
-#include "MTUSize.h"
-#include "SocketLayer.h"
-#include "WSAStartupSingleton.h"
-#include "RakSleep.h"
+#include <netdb.h>
+
 #include "DS_OrderedList.h"
+#include "GetTime.h"
 #include "LinuxStrings.h"
+#include "MTUSize.h"
+#include "RakSleep.h"
 #include "SocketDefines.h"
+#include "SocketLayer.h"
 #include "VitaIncludes.h"
+#include "WSAStartupSingleton.h"
 #include "errno.h"
 
 #ifndef INVALID_SOCKET
