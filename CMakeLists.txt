@@ -24,6 +24,10 @@ target_link_libraries(RakNet ${RAKNET_LIBRARY_LIBS})
 #	INSTALL(TARGETS RakNetDLL DESTINATION ${RakNet_SOURCE_DIR}/Lib/DLL)
 #ENDIF(WIN32 AND NOT UNIX)
 
+if (WIN32)
+	target_compile_definitions(RakNet PRIVATE _RAKNET_DLL)
+endif ()
+
 if(CMAKE_SIZEOF_VOID_P EQUAL 8)
 	set_target_properties(RakNet PROPERTIES OUTPUT_NAME "RakNet64")
 else()
